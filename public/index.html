@@ -5,13 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akiyuri Portal - TOP</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel=”icon” href=“favicon.ico”>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
-    <h1>Akiyuri Portal</h1>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-left">
+    
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a class="uk-text-warning" href="#TOP">TOP</a></li>
+                        <li class="uk-active"><a class="uk-text-warning" href="#about-me">About</a></li>
+                        <li>
+                            <a class="uk-text-warning" href="#works">Works</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#itss">ISLAND TV SUPER SEARCH</a></li>
+                                    <li><a href="#smc">SixTONES MEDIA CALENDAR</a></li>
+                                    <li><a href="#sts">すとーんずのしんだん</a></li>
+                                    <li><a href="#stm">SixTONES聖地巡礼マップ</a></li>
+                                    <li><a href="#jjcm">ジャニーズJr.チャンネル聖地巡礼マップ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="uk-text-warning" href="#sns">SNS</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="#twitter">Twitter</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                    <li><a href="#instagram">Instagram</a></li>
+                                    <li><a href="#weibo">Weibo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
     <div>
-        <button onclick=meAlert();>Please Push!</button>
+        <div id="TOP" class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/PP_kiiroiyurinohana_half.jpg);">
+        <code>
+            <h1 class="uk-heading-primary uk-text-center uk-margin-remove-bottom uk-text-warning">
+                Akiyuri Portal
+            </h1>
+        </code>
+        </div id="TOP">
+
+        <div id="about-me" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+            <h4>About Me</h4>
+            <p>HN：秋百合（Akiyuri）</p>
+            <p>ジャニオタとして：SixTONESからはじまりJr.中心に事務所まるっとファン。髙地優吾担。</p>
+            <p>エンジニアとして：プログラミング歴3年目。HTML、CSS、JavaScript、Java（Android）、PHPなど。スプレッドシート統計も好き。</p>
+        </div>
+
+        <div id="works" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+            <h4>Works</h4>
+            <div id="itss">
+                <h5>
+                    <a class="uk-text-warning" href="https://islandtvsearch.herokuapp.com/" target="_blank">ISLAND TV SUPER SEARCH</a>
+                </h5>
+                <p>ISLAND TVの出演者名、タイトルから動画を検索できます。</p>
+                <p>
+                    <span class="uk-label uk-label-warning">基本検索</span><br>
+                    ISLAND TVの出演者名や動画タイトル（シリーズ名）を入力して、「グループの動画を含めるか」のラジオボタン「含めない」を選択してください。複数の単語をスペース区切りで入力すると動画が絞り込まれて表示されます。<br>
+                    <span class="uk-label uk-label-warning">グループ検索</span><br>
+                    ISLAND TVの出演者でグループ（ISLAND TV公式+Jr.SP、少年忍者、関西ジャニーズJr.)に所属しているタレントのフルネームを、姓名の間にスペースを入れすに公式表記通り（例：○髙地優吾、×高地優吾）入力して、「グループの動画を含めるか」のラジオボタン「含める」を選択してください。複数の単語を入力すると無効になりますのでご注意ください。<br>
+                    <span class="uk-label uk-label-warning">OR検索</span><br>
+                    「or 」を先頭に、ISLAND TVの出演者名や動画タイトル（シリーズ名）を入力して（例、「or 髙地優吾 ラウール 吉澤閑也」)、「グループの動画を含めるか」のラジオボタン「含めない」を選択してください。複数の単語をスペース区切りで入力すると、いずれかの検索ワードに合致した動画が全て表示されます。複数の推しやグループの名前を入力することで、ISLAND TV公式のフォロー機能を生かしたタイムラインの代用としてもご活用いただけると思います。
+                </p>
+            </div>
+            <div id="smc">
+                <h5><a class="uk-text-warning" href="https://sites.google.com/view/sixtones-media-info">SixTONES MEDIA CALENDAR</a></h5> 
+                <p>ご自身のGoogleカレンダー、iPhone（iPod, iPad, Mac等のApple製品デフォルトアプリ）カレンダー等にSixTONESのメディア情報を登録することができます。</p>
+            </div>
+            <div id="sts">
+                <h5><a class="uk-text-warning" href="https://akiyuri-dev.github.io/shindan/index.html">すとーんずのしんだん</a></h5>
+                <p>SixTONESに関する診断です。Imitation Rain関連が多め。</p>
+            </div>
+            <div id="stm">
+                <h5><a class="uk-text-warning" href="https://drive.google.com/open?id=1F6yJMikZfbIkx387V4DKl2-JteCQXzpT&usp=sharing">SixTONES聖地巡礼マップ</a></h5>
+                <p>YouTubeのジャニーズJr.チャンネルのSixTONESの動画で登場した場所とコンサートを行った場所を紹介します。</p>
+            </div>
+            <div id="jjcm">
+                <h5><a class="uk-text-warning" href="https://drive.google.com/open?id=1EXoRI1Xmp3J5MNJYRRMC0QEfVh4ojc4W&usp=sharing">ジャニーズJr.チャンネル聖地巡礼マップ</a class="uk-text-warning"></h5>
+                <p>YouTubeのジャニーズJr.チャンネルで登場した場所を紹介します。</p>
+            </div>
+        </div>
+
+        <div id="sns" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+            <h4>SNS</h4>
+            <div id="twitter">
+                <h5>Twitter</h5>
+                <p><a class="uk-text-warning" href="https://twitter.com/akiyuri_stlover" target="_blank">秋百合 - @akiyuri_stlover</a></p>
+                <p>20↑SixTONESからはじまりJr.中心に事務所まるっとファン。黄色の日々笑顔キラキラな人が好きです。無言フォロー&いいね常習犯。合わないと思ったら即ブロで。</p>
+            </div>
+            <div id="blog">
+                <h5>Blog</h5>
+                <p><a class="uk-text-warning" href="https://akiyuri-stlover.hatenablog.com/" target="_blank">あきゆりのぶろぐ</a></p>
+                <p>Twitterよりもさらに気まぐれな更新頻度。かつ内容がなかなかにマニアックですが、SixTONESの話題を多めにジャニーズJr.のエントリ多め。</p>
+            </div>
+            <div id="instagram">
+                <h5>Instagram</h5>
+                <p><a class="uk-text-warning" href="https://www.instagram.com/akiyuri_stlover/" target="_blank">秋百合 (@akiyuri_stlover) • Instagram photos and videos</a></p>
+                <p>ブログよりもさらに気まぐれな更新頻度。かつ内容があまりないです。</p>
+            </div>
+            <div id="weibo">
+                <h5>Weibo</h5>
+                <p><a class="uk-text-warning" href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F7277357247%2Fprofile%3Ftopnav%3D1%26wvr%3D6&domain=.weibo.com&sudaref=https%3A%2F%2Fakiyuri-stlover.hatenablog.com%2Fentry%2F2019%2F08%2F09%2F222130&ua=php-sso_sdk_client-0.6.28&_rand=1580883494.224" target="_blank">秋百合Stlover Weibo</a></p>
+                <p>Instagramと同じくらい気まぐれな更新頻度。かつ内容は日本語・英語・中国語（Google翻訳）です。</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
