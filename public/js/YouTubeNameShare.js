@@ -22,7 +22,6 @@ function makeURL(){
     var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
     
     var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
-    alert(YOUTUBE_KEY);
     var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=snippet";
 
     var title = "";
