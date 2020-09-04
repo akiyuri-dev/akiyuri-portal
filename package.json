@@ -1,11 +1,12 @@
 {
-    "name": "awake",
-    "private": true,
-    "scripts": {
-      "start": "nf start"
-    },
-    "dependencies": {
-      "serve": "~10.1.1",
-      "foreman": "~3.0.1"
-    }
+  "name": "awake",
+  "private": true,
+  "scripts": {
+    "start": "nf start"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "foreman": "~3.0.1",
+    "serve": "~10.1.1"
   }
+}

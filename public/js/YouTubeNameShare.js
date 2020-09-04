@@ -20,6 +20,7 @@ function makeURL(){
     var movieId = URLarray[URLarray.length - 1];
 
     var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
+    require('dotenv').config();
     const YOUTUBE_KEY = process.env.YOUTUBE_KEY;
     alert(YOUTUBE_KEY);
     var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=snippet";
