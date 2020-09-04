@@ -37,7 +37,7 @@ function makeURL(){
         })
         .always(function () {
 
-            var tweetURL = title + "\n" + URL;
+            var tweetURL = title + "<pre>" + URL + "</pre>";
 
             document.getElementById("result-erea").innerHTML = "<p>" + tweetURL + "</p>"
                 + '<p uk-margin>'
