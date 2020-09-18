@@ -49,3 +49,69 @@ function makeURL(){
         });
 	
 }
+
+function calcURL(){
+    var countY = document.getElementById("IRcount").value;
+    var YYsa = document.getElementById("IRsa").value;
+    var movieId = "pTh-ncw31ZA"; //Imitation Rain
+
+    var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
+    
+    var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
+    var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=statistics";
+
+    var countT = "";
+
+    $.getJSON(requestUrl, data)
+        .done(function (data1, textStatus, jqXHR) {
+            countT = data1["items"][0]["statistics"]["viewCount"];;
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.status); 
+            console.log(textStatus); 
+            console.log(errorThrown); 
+        })
+        .always(function () {
+            var YTsa = countT - countY;
+            var hi = YTsa - YYsa;
+            var showURL = "開始前 " + countT + "<br>" 
+                + " 昨日から＋" + YTsa + "<br>"
+                + "前日比" + hi;
+
+            document.getElementById("result-erea1").innerHTML = "<p>" + showURL + "</p>";
+        });
+	
+}
+
+function calcURL2(){
+    var countY = document.getElementById("IRcount2").value;
+    var YYsa = document.getElementById("IRsa2").value;
+    var movieId = "VUrSsrAnq8M"; //NAVIGATOR
+
+    var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
+    
+    var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
+    var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=statistics";
+
+    var countT = "";
+
+    $.getJSON(requestUrl, data)
+        .done(function (data1, textStatus, jqXHR) {
+            countT = data1["items"][0]["statistics"]["viewCount"];;
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.status); 
+            console.log(textStatus); 
+            console.log(errorThrown); 
+        })
+        .always(function () {
+            var YTsa = countT - countY;
+            var hi = YTsa - YYsa;
+            var showURL = "開始前 " + countT + "<br>" 
+                + " 昨日から＋" + YTsa + "<br>"
+                + "前日比" + hi;
+
+            document.getElementById("result-erea2").innerHTML = "<p>" + showURL + "</p>";
+        });
+	
+}

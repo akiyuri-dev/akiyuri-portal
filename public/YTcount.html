@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Akiyuri Portal - YTcount</title>
+    <link rel=”icon” href=“favicon.ico”>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/YouTubeNameShare.js"></script>
+</head>
+<body>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-left">
+    
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a class="uk-text-warning" href="index.html">TOP</a></li>
+                        <li class="uk-active"><a class="uk-text-warning" href="index.html#about-me">About</a></li>
+                        <li>
+                            <a class="uk-text-warning" href="index.html#works">Works</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="index.html#itss">ISLAND TV SUPER SEARCH</a></li>
+                                    <li><a href="index.html#smc">SixTONES MEDIA CALENDAR</a></li>
+                                    <li><a href="index.html#sts">すとーんずのしんだん</a></li>
+                                    <li><a href="index.html#stm">SixTONES聖地巡礼マップ</a></li>
+                                    <li><a href="index.html#jjcm">ジャニーズJr.チャンネル聖地巡礼マップ</a></li>
+                                    <li><a href="index.html#ytts">YouTube Time Share</a></li>
+                                    <li><a href="index.html#ytns">YouTube Name Share</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="uk-text-warning" href="index.html#sns">SNS</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li><a href="index.html#twitter">Twitter</a></li>
+                                    <li><a href="index.html#blog">Blog</a></li>
+                                    <li><a href="index.html#memo">Memo</a></li>
+                                    <li><a href="index.html#instagram">Instagram</a></li>
+                                    <li><a href="index.html#weibo">Weibo</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
+    <div>
+        <div id="TOP" class="uk-background-cover uk-height-medium uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/PP_kiiroiyurinohana_half.jpg);">
+        <code>
+            <h1 class="uk-heading-primary uk-text-center uk-margin-remove-bottom uk-text-warning">
+                YTcount
+            </h1>
+        </code>
+    </div>
+
+        <div id="IR" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+            <form class="uk-grid-small" uk-grid>
+            
+                    <legend class="uk-legend">IR昨日の「再生回数」</legend>
+            
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="number" placeholder="昨日の再生回数" id="IRcount">
+                    </div>
+
+                    <legend class="uk-legend">IR昨日の「昨日から」</legend>
+            
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="number" placeholder="昨日から" id="IRsa">
+                    </div>
+
+            </form>
+            <p uk-margin>
+                <button class="uk-button uk-button-secondary" onclick="calcURL();">計算</button>
+            </p>
+        </div>
+
+        <div id="result-erea1" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+
+        </div>
+
+        <div id="NA" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+            <form class="uk-grid-small" uk-grid>
+            
+                    <legend class="uk-legend">NA昨日の「再生回数」</legend>
+            
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="number" placeholder="昨日の再生回数" id="IRcount2">
+                    </div>
+
+                    <legend class="uk-legend">NA昨日の「昨日から」</legend>
+            
+                    <div class="uk-width-1-2@s">
+                        <input class="uk-input" type="number" placeholder="昨日から" id="IRsa2">
+                    </div>
+
+            </form>
+            <p uk-margin>
+                <button class="uk-button uk-button-secondary" onclick="calcURL2();">計算</button>
+            </p>
+        </div>
+
+        <div id="result-erea2" class="uk-margin-medium uk-margin-medium-left uk-margin-medium-right">
+
+        </div>
+
+        
+    </div>
+</body>
+</html>
