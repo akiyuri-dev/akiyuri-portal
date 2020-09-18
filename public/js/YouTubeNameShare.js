@@ -1,3 +1,4 @@
+var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
 $(function () {
     $('a[href^="#"]').click(function () {
         var headerHight = 100;
@@ -21,7 +22,7 @@ function makeURL(){
 
     var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
     
-    var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
+    //var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
     var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=snippet";
 
     var title = "";
@@ -57,7 +58,7 @@ function calcURL(){
 
     var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
     
-    var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
+    //var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
     var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=statistics";
 
     var countT = "";
@@ -90,7 +91,7 @@ function calcURL2(){
 
     var requestUrl = "https://www.googleapis.com/youtube/v3/videos";
     
-    var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
+    //var YOUTUBE_KEY = '<=YOUTUBE_KEY=>';
     var data = "id=" + movieId + "&key=" + YOUTUBE_KEY + "&part=statistics";
 
     var countT = "";
